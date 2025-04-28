@@ -1,5 +1,25 @@
 Code RAG leverages a **retrieval-augmented generation (RAG)** model to generate code based on your queries. Whether you're building from scratch or using pre-built images, this guide will help you get started with setting up and using Code RAG seamlessly.
 
+## Dataset
+
+We have used the CodeSearchNet dataset in this project. Please cite the following paper if you use the dataset:
+
+```bibtex
+@article{husain2019codesearchnet,
+  title={{CodeSearchNet} challenge: Evaluating the state of semantic code search},
+  author={Husain, Hamel and Wu, Ho-Hsiang and Gazit, Tiferet and Allamanis, Miltiadis and Brockschmidt, Marc},
+  journal={arXiv preprint arXiv:1909.09436},
+  year={2019}
+}
+```
+For more information, visit the [CodeSearchNet GitHub repository](https://github.com/github/CodeSearchNet).
+## Output
+
+Here is the result for the query: **"write code to parse json file in python"**.
+
+![Query Output](query-output.png)
+
+
 ❗ This repository contains original coursework submitted for academic credit. Reuse, reproduction, or redistribution is prohibited without explicit permission.
 
 Follow the instructions below to clone the repository, set up the Docker environment, and start generating code. **We recommend using Option 2**. Let's get started!
@@ -80,25 +100,6 @@ For example, you can ask the model:
 ```bash
 Generate a Python function to calculate the factorial of a number.
 ```
-## Dataset
-
-We have used the CodeSearchNet dataset in this project. Please cite the following paper if you use the dataset:
-
-```bibtex
-@article{husain2019codesearchnet,
-  title={{CodeSearchNet} challenge: Evaluating the state of semantic code search},
-  author={Husain, Hamel and Wu, Ho-Hsiang and Gazit, Tiferet and Allamanis, Miltiadis and Brockschmidt, Marc},
-  journal={arXiv preprint arXiv:1909.09436},
-  year={2019}
-}
-```
-For more information, visit the [CodeSearchNet GitHub repository](https://github.com/github/CodeSearchNet).
-## Output
-
-Here is the result for the query: **"write code to parse json file in python"**.
-
-![Query Output](query-output.png)
-
 
 ## Contributors :
 1) Abhijeet Dixit
