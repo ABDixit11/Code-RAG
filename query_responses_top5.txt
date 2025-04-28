@@ -1,0 +1,32 @@
+Query: Provide code to add two numbers
+Results:
+ 1. def generic_add(a, b):
+    """Simple function to add two numbers"""
+    logger.debug('Called generic_add({}, {})'.format(a, b))
+    return a + b
+ 2. def generic_add(a, b):
+    print
+    """Simple function to add two numbers"""
+    logger.info('Called generic_add({}, {})'.format(a, b))
+    return a + b
+ 3. def request_add(self, req, x, y):
+        """Add two numbers"""
+        r = x + y
+        self._add_result.set_value(r)
+        return ("ok", r)
+ 4. async def add(ctx, left: int, right: int):
+    """Adds two numbers together."""
+    await ctx.send(left + right)
+ 5. def add(one, two=4, three=False):
+    ''' This function adds two number.
+
+    :param one: first number to add
+    :param two: second number to add
+    :rtype: int
+    '''
+    s = str(int(one) + int(two))
+
+    logging.debug('logging sum from hello.py:' + s)
+    print 'printing sum from hello.py:', s
+
+    return s
